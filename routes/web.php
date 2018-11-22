@@ -11,6 +11,15 @@
 |
 */
 
+// just for testing
 Route::get('/', function () {
-    return view('welcome');
+    return view('users.index');
+});
+
+Route::get('/login', function () {
+    return view('users.login');
+});
+
+Route::get('/profile', function () {
+    return view('users.profile');
 });
