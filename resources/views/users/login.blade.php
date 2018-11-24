@@ -34,9 +34,7 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!--end::Web font -->
 
 		<!--begin::Global Theme Styles -->
-		<link href="{{ asset('css/vendors.bundle.rtl.css') }}" rel="stylesheet" type="text/css" />
-		<link href="{{ asset('css/style.bundle.rtl.css') }}" rel="stylesheet" type="text/css" />
-
+		<link rel="stylesheet" href="{{ asset('css/app.css') }}">
 		<!--end::Global Theme Styles -->
 		{{--<link rel="shortcut icon" href="../../../assets/demo/default/media/img/logo/favicon.ico" />--}}
 	</head>
@@ -160,8 +158,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
 		<!--begin::Global Theme Bundle -->
 		<script src="{{ asset('js/vendors.bundle.js') }}" type="text/javascript"></script>
-		<script src="{{ asset('js/scripts.bundle.js') }}" type="text/javascript"></script>
-
+		<script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
+		<script src="{{ asset('js/user.js') }}" type="text/javascript"></script>
 		<!--end::Global Theme Bundle -->
 
 		<!--begin::Page Scripts -->

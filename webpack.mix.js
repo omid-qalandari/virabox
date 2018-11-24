@@ -1,4 +1,4 @@
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -10,14 +10,21 @@ let mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
-mix.js([
-        'resources/assets/js/scripts.bundle.js',
-        'resources/assets/js/dashboard.js'
-    ], 'public/js/app.js')
-    .js('resources/assets/js/vendors.bundle.js', 'public/js/vendor.js')
-    .styles([
+
+// Global styles, js and fonts
+mix.styles([
         'resources/assets/css/style.bundle.rtl.css',
         'resources/assets/css/vendors.bundle.rtl.css'
     ], 'public/css/app.css')
+    .js([
+        'resources/assets/js/scripts.bundle.js',
+        'resources/assets/js/dashboard.js'
+    ], 'public/js/app.js')
     .copy('resources/assets/fonts', 'public/css/fonts')
 
+// User Section Styles
+mix.js([
+        'resources/assets/users/js/user.js',
+        'resources/assets/users/js/formValidation.js',
+        'resources/assets/users/js/login.js'
+    ], 'public/js/user.js')

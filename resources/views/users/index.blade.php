@@ -9,8 +9,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
-    <link href="{{ asset('css/style.bundle.rtl.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('css/vendors.bundle.rtl.css')}}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <!-- end::Head -->
 
@@ -24,7 +23,7 @@
         <header id="m_header" class="m-grid__item    m-header " m-minimize-offset="200" m-minimize-mobile-offset="200">
             <div class="m-container m-container--fluid m-container--full-height">
                 <div class="m-stack m-stack--ver m-stack--desktop">
-            
+
                     <!-- BEGIN: Brand -->
                     <div class="m-stack__item m-brand  m-brand--skin-dark ">
                         <div class="m-stack m-stack--ver m-stack--general">
@@ -34,41 +33,41 @@
                                 </a>
                             </div>
                             <div class="m-stack__item m-stack__item--middle m-brand__tools">
-            
+
                                 <!-- BEGIN: Left Aside Minimize Toggle -->
                                 <a href="javascript:;" id="m_aside_left_minimize_toggle" class="m-brand__icon m-brand__toggler m-brand__toggler--left m--visible-desktop-inline-block  ">
                                     <span></span>
                                 </a>
-            
+
                                 <!-- END -->
-            
+
                                 <!-- BEGIN: Responsive Aside Left Menu Toggler -->
                                 <a href="javascript:;" id="m_aside_left_offcanvas_toggle" class="m-brand__icon m-brand__toggler m-brand__toggler--left m--visible-tablet-and-mobile-inline-block">
                                     <span></span>
                                 </a>
-            
+
                                 <!-- END -->
-            
+
                                 <!-- BEGIN: Responsive Header Menu Toggler -->
                                 <a id="m_aside_header_menu_mobile_toggle" href="javascript:;" class="m-brand__icon m-brand__toggler m--visible-tablet-and-mobile-inline-block">
                                     <span></span>
                                 </a>
-            
+
                                 <!-- END -->
-            
+
                                 <!-- BEGIN: Topbar Toggler -->
                                 <a id="m_aside_header_topbar_mobile_toggle" href="javascript:;" class="m-brand__icon m--visible-tablet-and-mobile-inline-block">
                                     <i class="flaticon-more"></i>
                                 </a>
-            
+
                                 <!-- BEGIN: Topbar Toggler -->
                             </div>
                         </div>
                     </div>
-            
+
                     <!-- END: Brand -->
                     <div class="m-stack__item m-stack__item--fluid m-header-head" id="m_header_nav">
-            
+
                         <!-- BEGIN: Horizontal Menu -->
                         <button class="m-aside-header-menu-mobile-close  m-aside-header-menu-mobile-close--skin-dark " id="m_aside_header_menu_mobile_close_btn"><i
                                 class="la la-close"></i></button>
@@ -81,9 +80,9 @@
                                 </li>
                             </ul>
                         </div>
-            
+
                         <!-- END: Horizontal Menu -->
-            
+
                         <!-- BEGIN: Topbar -->
                         <div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general m-stack--fluid">
                             <div class="m-stack__item m-topbar__nav-wrapper">
@@ -265,7 +264,7 @@
                                                         <div class="m-card-user__pic">
                                                             <img src="assets/app/media/img/users/user4.jpg" class="m--img-rounded m--marginless"
                                                                 alt="">
-            
+
                                                             <!--
                                     <span class="m-type m-type--lg m--bg-danger"><span class="m--font-light">S<span><span>
                                     -->
@@ -333,7 +332,7 @@
                                 </ul>
                             </div>
                         </div>
-            
+
                         <!-- END: Topbar -->
                     </div>
                 </div>
@@ -471,8 +470,8 @@
 
     <!-- begin:: Global Theme Bundle -->
     <script src="{{ asset('js/vendors.bundle.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('js/scripts.bundle.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('js/dashboard.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('js/user.js') }}" type="text/javascript"></script>
 
 
     <!-- end:: Page Scripts -->
