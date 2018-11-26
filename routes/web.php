@@ -13,13 +13,13 @@
 
 // just for testing
 Route::get('/', function () {
-    return view('users.index');
+    return view('user.index');
 });
 
 Route::get('/login', function () {
-    return view('users.login');
+    return view('user.login');
 });
 
 Route::get('/profile', function () {
-    return view('users.profile');
+    return view('user.profile');
 });

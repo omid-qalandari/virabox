@@ -17,14 +17,25 @@ mix.styles([
         'resources/assets/css/vendors.bundle.rtl.css'
     ], 'public/css/app.css')
     .js([
-        'resources/assets/js/scripts.bundle.js',
-        'resources/assets/js/dashboard.js'
-    ], 'public/js/app.js')
+        'resources/assets/users/js/user.js',
+        'resources/assets/users/js/formValidation.js',
+        'resources/assets/users/js/login.js'
+    ], 'public/js/user.js')
     .copy('resources/assets/fonts', 'public/css/fonts')
 
 // User Section Styles
+/*
 mix.js([
         'resources/assets/users/js/user.js',
         'resources/assets/users/js/formValidation.js',
         'resources/assets/users/js/login.js'
     ], 'public/js/user.js')
+*/
+
+mix.webpackConfig({
+    resolve: {
+        alias: {
+            'vue$': 'vue/dist/vue.runtime.esm.js'
+        }
+    }
+})
